@@ -13,17 +13,13 @@ I'm passionate about building applications, exploring AI-driven solutions, and d
 
 ## 📊 My Developer Activity
 
-\!GitHub Activity Graph
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=cpint2410&theme=tokyo-night&hide_border=true&area=true)
 
 ---
 
 ## 🥧 Technologies Across My Projects
 
-![Language Distribution](./assets/language-chart.png)
-
-*Number of public repositories using each language.*
-
----
+![Language Distribution](https://quickchart.io/chart?width=600&height=350&c=%7B%22type%22%3A%22pie%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Python%22%2C%22Java%22%2C%22JavaScript%22%2C%22TypeScript%22%2C%22Other%22%5D%2C%22datasets%22%3A%5B%7B%22data%22%3A%5B1%2C1%2C1%2C1%2C1%5D%2C%22backgroundColor%22%3A%5B%22%233572A5%22%2C%22%23B07219%22%2C%22%23F1E05A%22%2C%22%233178C6%22%2C%22%23999999%22%5D%7D%5D%7D%7D)
 
 ## 🛠️ Languages I Work With
 
