@@ -13,7 +13,7 @@ I'm passionate about building applications, exploring AI-driven solutions, and d
 
 ## 📊 My Developer Activity
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=cpint2410&theme=tokyo-night&hide_border=true&area=true)
+![My GitHub Activity](./assets/activity.svg)
 
 ---
 
