@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Chris Pinto\!
+# 👋 Hi, It's Chris\!
 
 ### Computer Science Student | Software Developer | Problem Solver
 
@@ -19,11 +19,9 @@ I'm passionate about building applications, exploring AI-driven solutions, and d
 
 ## 🥧 Technologies Across My Projects
 
-**Number of repositories using each technology** (based on the five verified language appearances across my original code repositories).
+![Language Distribution](./assets/language-chart.png)
 
-\!Technology Pie Chart
-
-_One count represents one repository containing that language. Multiple languages can appear in the same repository._
+*Number of public repositories using each language.*
 
 ---
 
@@ -49,8 +47,9 @@ _One count represents one repository containing that language. Multiple language
 
 ## 📫 Connect With Me
 
-- LinkedIn
-- Portfolio
+- [LinkedIn](https://www.linkedin.com/in/chris-pinto-083242388)
+- [Portfolio](https://chrispinto.tech/)
 - [GitHub](<https://github.com/cpint2410>)
+- [X](https://x.com/2410_cpu) _(Twitter)_
 
 ⭐ Thanks for visiting my profile\!
