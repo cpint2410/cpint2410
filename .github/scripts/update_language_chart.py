@@ -1,71 +1,125 @@
 import json
+import math
+import os
+import urllib.parse
 import urllib.request
 from collections import Counter
-from datetime import datetime, timedelta, timezone
 from html import escape
 
-username = "cpint2410"
-today = datetime.now(timezone.utc).date()
-start = today - timedelta(days=29)
+USERNAME = "cpint2410"
+TOKEN = os.environ["GITHUB_TOKEN"]
 
-url = f"https://api.github.com/users/{username}/events/public?per_page=100"
-req = urllib.request.Request(url, headers={
+HEADERS = {
     "Accept": "application/vnd.github+json",
-    "User-Agent": "GitHub-Activity-Chart"
-})
+    "Authorization": f"Bearer {TOKEN}",
+    "User-Agent": "GitHub-Language-Chart"
+}
 
-with urllib.request.urlopen(req) as response:
-    events = json.loads(response.read())
+def github_get(url):
+    request = urllib.request.Request(url, headers=HEADERS)
+    with urllib.request.urlopen(request) as response:
+        return json.loads(response.read())
 
-counts = Counter()
+# Get public repositories
+repos = github_get(
+    f"https://api.github.com/users/{USERNAME}/repos?per_page=100&type=owner"
+)
 
-for event in events:
-    day = datetime.fromisoformat(
-        event["created_at"].replace("Z", "+00:00")
-    ).date()
+language_counts = Counter()
 
-    if start <= day <= today:
-        counts[day] += 1
+# Count each language once per repository
+for repo in repos:
+    if repo["fork"]:
+        continue
 
-width, height = 850, 240
-left, top = 35, 45
-chart_height = 125
-bar_width = 15
-gap = 11
+    name = urllib.parse.quote(repo["name"], safe="")
+    url = f"https://api.github.com/repos/{USERNAME}/{name}/languages"
 
-maximum = max(counts.values(), default=1)
+    languages = github_get(url)
 
-bars = []
+    for language, bytes_used in languages.items():
+        if bytes_used > 0:
+            language_counts[language] += 1
 
-for i in range(30):
-    day = start + timedelta(days=i)
-    value = counts[day]
-    bar_height = (value / maximum) * chart_height
-    x = left + i * (bar_width + gap)
-    y = top + chart_height - bar_height
+if not language_counts:
+    raise RuntimeError("No programming languages found.")
 
-    color = "#58a6ff" if value else "#30363d"
+colors = [
+    "#3572A5", "#B07219", "#F1E05A",
+    "#3178C6", "#E34F26", "#563D7C",
+    "#00ADD8", "#6E4C13", "#8B949E"
+]
 
-    bars.append(
-        f'<rect x="{x}" y="{y}" width="{bar_width}" '
-        f'height="{max(bar_height, 2)}" rx="4" fill="{color}">'
-        f'<title>{day}: {value} public events</title></rect>'
+total = sum(language_counts.values())
+
+width, height = 760, 420
+cx, cy, radius = 190, 210, 140
+
+svg = [
+    f'<svg xmlns="http://www.w3.org/2000/svg" '
+    f'width="{width}" height="{height}" '
+    f'viewBox="0 0 {width} {height}">',
+    '<rect width="100%" height="100%" rx="16" fill="#0d1117"/>',
+    '<text x="35" y="35" fill="#ffffff" '
+    'font-size="21" font-weight="bold" '
+    'font-family="Arial">Languages Across My Projects</text>'
+]
+
+start_angle = -90
+
+for i, (language, count) in enumerate(language_counts.most_common()):
+    fraction = count / total
+    end_angle = start_angle + fraction * 360
+    color = colors[i % len(colors)]
+
+    if count == total:
+        svg.append(
+            f'<circle cx="{cx}" cy="{cy}" r="{radius}" fill="{color}"/>'
+        )
+    else:
+        x1 = cx + radius * math.cos(math.radians(start_angle))
+        y1 = cy + radius * math.sin(math.radians(start_angle))
+        x2 = cx + radius * math.cos(math.radians(end_angle))
+        y2 = cy + radius * math.sin(math.radians(end_angle))
+
+        large_arc = 1 if fraction > 0.5 else 0
+
+        svg.append(
+            f'<path d="M {cx} {cy} L {x1:.2f} {y1:.2f} '
+            f'A {radius} {radius} 0 {large_arc} 1 '
+            f'{x2:.2f} {y2:.2f} Z" fill="{color}"/>'
+        )
+
+    start_angle = end_angle
+
+# Legend
+for i, (language, count) in enumerate(language_counts.most_common()):
+    y = 105 + i * 43
+    color = colors[i % len(colors)]
+
+    svg.append(
+        f'<rect x="405" y="{y-13}" width="15" height="15" '
+        f'rx="3" fill="{color}"/>'
     )
 
-svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
-width="{width}" height="{height}" viewBox="0 0 {width} {height}">
-<rect width="100%" height="100%" rx="12" fill="#0d1117"/>
-<text x="35" y="28" fill="#ffffff" font-size="17"
-font-family="Arial" font-weight="bold">My GitHub Activity</text>
-<text x="35" y="215" fill="#8b949e" font-size="12"
-font-family="Arial">Last 30 days · Public GitHub events</text>
-{''.join(bars)}
-</svg>'''
+    svg.append(
+        f'<text x="432" y="{y}" fill="#ffffff" '
+        f'font-size="15" font-family="Arial">'
+        f'{escape(language)} — {count} repositories</text>'
+    )
 
-import os
+svg.append(
+    '<text x="405" y="375" fill="#8b949e" '
+    'font-size="12" font-family="Arial">'
+    'A repository can contain multiple languages</text>'
+)
+
+svg.append('</svg>')
+
 os.makedirs("assets", exist_ok=True)
 
-with open("assets/activity.svg", "w") as file:
-    file.write(svg)
+with open("assets/language-chart.svg", "w") as file:
+    file.write("\n".join(svg))
 
-print("Activity chart generated!")
+print("Language pie chart generated!")
+print(dict(language_counts))
