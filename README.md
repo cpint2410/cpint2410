@@ -19,7 +19,7 @@ I'm passionate about building applications, exploring AI-driven solutions, and d
 
 ## 🥧 Technologies Across My Projects
 
-![Programming Language Distribution](./assets/language-chart.png)
+![Programming Language Distribution](./assets/language-chart.svg)
 
 ## 🛠️ Languages I Work With
 
