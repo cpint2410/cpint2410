@@ -1,23 +1,308 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420">
-<rect width="100%" height="100%" rx="16" fill="#0d1117"/>
-<text x="35" y="35" fill="#ffffff" font-size="21" font-weight="bold" font-family="Arial">Languages Across My Projects</text>
-<path d="M 190 210 L 190.00 70.00 A 140 140 0 0 1 323.15 253.26 Z" fill="#3572A5"/>
-<path d="M 190 210 L 323.15 253.26 A 140 140 0 0 1 190.00 350.00 Z" fill="#B07219"/>
-<path d="M 190 210 L 190.00 350.00 A 140 140 0 0 1 56.85 253.26 Z" fill="#F1E05A"/>
-<path d="M 190 210 L 56.85 253.26 A 140 140 0 0 1 56.85 166.74 Z" fill="#3178C6"/>
-<path d="M 190 210 L 56.85 166.74 A 140 140 0 0 1 107.71 96.74 Z" fill="#E34F26"/>
-<path d="M 190 210 L 107.71 96.74 A 140 140 0 0 1 190.00 70.00 Z" fill="#563D7C"/>
-<rect x="405" y="92" width="15" height="15" rx="3" fill="#3572A5"/>
-<text x="432" y="105" fill="#ffffff" font-size="15" font-family="Arial">HTML — 3 repositories</text>
-<rect x="405" y="135" width="15" height="15" rx="3" fill="#B07219"/>
-<text x="432" y="148" fill="#ffffff" font-size="15" font-family="Arial">TypeScript — 2 repositories</text>
-<rect x="405" y="178" width="15" height="15" rx="3" fill="#F1E05A"/>
-<text x="432" y="191" fill="#ffffff" font-size="15" font-family="Arial">CSS — 2 repositories</text>
-<rect x="405" y="221" width="15" height="15" rx="3" fill="#3178C6"/>
-<text x="432" y="234" fill="#ffffff" font-size="15" font-family="Arial">C — 1 repositories</text>
-<rect x="405" y="264" width="15" height="15" rx="3" fill="#E34F26"/>
-<text x="432" y="277" fill="#ffffff" font-size="15" font-family="Arial">Makefile — 1 repositories</text>
-<rect x="405" y="307" width="15" height="15" rx="3" fill="#563D7C"/>
-<text x="432" y="320" fill="#ffffff" font-size="15" font-family="Arial">JavaScript — 1 repositories</text>
-<text x="405" y="375" fill="#8b949e" font-size="12" font-family="Arial">A repository can contain multiple languages</text>
+<defs>
+
+    <radialGradient id="bg-grad" cx="15%" cy="15%" r="85%">
+      <stop offset="0%" stop-color="#182232"/>
+      <stop offset="100%" stop-color="#0a0e14"/>
+    </radialGradient>
+    
+
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1f2937" stop-opacity="0.1"/>
+    </linearGradient>
+    
+
+    <filter id="drop-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12"
+                    flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    
+
+    <linearGradient id="grad-blue" x1="0%" y1="0%"
+                    x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    
+
+    <linearGradient id="grad-amber" x1="0%" y1="0%"
+                    x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    
+
+    <linearGradient id="grad-yellow" x1="0%" y1="0%"
+                    x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    
+
+    <linearGradient id="grad-indigo" x1="0%" y1="0%"
+                    x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    
+
+    <linearGradient id="grad-orange" x1="0%" y1="0%"
+                    x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    
+
+    <linearGradient id="grad-purple" x1="0%" y1="0%"
+                    x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    
+
+    <linearGradient id="grad-cyan" x1="0%" y1="0%"
+                    x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    
+
+    <linearGradient id="grad-green" x1="0%" y1="0%"
+                    x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    
+
+    <linearGradient id="grad-pink" x1="0%" y1="0%"
+                    x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+    
+</defs>
+
+<rect width="100%" height="100%" rx="24"
+      fill="url(#bg-grad)" filter="url(#drop-shadow)"/>
+
+<rect x="1" y="1" width="758" height="418" rx="23"
+      fill="none" stroke="url(#border-grad)" stroke-width="2"/>
+
+
+<g transform="translate(35, 38)">
+
+  <rect width="36" height="36" rx="10"
+        fill="#3b82f6" fill-opacity="0.15"
+        stroke="#3b82f6" stroke-opacity="0.3"/>
+
+  <path d="M 12 11 L 7 18 L 12 25
+           M 24 11 L 29 18 L 24 25
+           M 19 9 L 17 27"
+        stroke="#60a5fa"
+        stroke-width="2.2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"/>
+
+  <text x="50" y="24"
+        fill="#f8fafc"
+        font-size="20"
+        font-weight="700"
+        font-family="system-ui, -apple-system, sans-serif"
+        letter-spacing="-0.3">
+    Languages Across My Projects
+  </text>
+
+</g>
+
+<path d="M 195.000,120.000 A 115,115 0 0 1 304.371,270.537 L 266.329,258.176 A 75,75 0 0 0 195.000,160.000 Z" fill="url(#grad-blue)"/>
+<path d="M 304.371,270.537 A 115,115 0 0 1 195.000,350.000 L 195.000,310.000 A 75,75 0 0 0 266.329,258.176 Z" fill="url(#grad-amber)"/>
+<path d="M 195.000,350.000 A 115,115 0 0 1 85.629,270.537 L 123.671,258.176 A 75,75 0 0 0 195.000,310.000 Z" fill="url(#grad-yellow)"/>
+<path d="M 85.629,270.537 A 115,115 0 0 1 85.629,199.463 L 123.671,211.824 A 75,75 0 0 0 123.671,258.176 Z" fill="url(#grad-indigo)"/>
+<path d="M 85.629,199.463 A 115,115 0 0 1 127.405,141.963 L 150.916,174.324 A 75,75 0 0 0 123.671,211.824 Z" fill="url(#grad-orange)"/>
+<path d="M 127.405,141.963 A 115,115 0 0 1 195.000,120.000 L 195.000,160.000 A 75,75 0 0 0 150.916,174.324 Z" fill="url(#grad-purple)"/>
+
+<circle cx="195" cy="235"
+        r="52"
+        fill="#0f172a"
+        stroke="#1e293b"
+        stroke-width="3"/>
+
+<text x="195" y="230"
+      text-anchor="middle"
+      fill="#ffffff"
+      font-size="18"
+      font-weight="700"
+      font-family="system-ui, -apple-system, sans-serif">
+    4
+</text>
+
+<text x="195" y="250"
+      text-anchor="middle"
+      fill="#64748b"
+      font-size="11"
+      font-weight="600"
+      font-family="system-ui, -apple-system, sans-serif"
+      letter-spacing="0.5">
+    REPOS
+</text>
+
+
+    <g transform="translate(405, 96.00)">
+
+      <rect width="14" height="14" rx="4"
+            fill="url(#grad-blue)"/>
+
+      <text x="28" y="12"
+            fill="#f1f5f9"
+            font-size="14"
+            font-weight="600"
+            font-family="system-ui, sans-serif">
+        HTML
+      </text>
+
+      <text x="215" y="12"
+            text-anchor="end"
+            fill="#94a3b8"
+            font-size="13"
+            font-family="system-ui, sans-serif">
+        3 repos
+      </text>
+
+    </g>
+    
+
+    <g transform="translate(405, 136.00)">
+
+      <rect width="14" height="14" rx="4"
+            fill="url(#grad-amber)"/>
+
+      <text x="28" y="12"
+            fill="#f1f5f9"
+            font-size="14"
+            font-weight="600"
+            font-family="system-ui, sans-serif">
+        TypeScript
+      </text>
+
+      <text x="215" y="12"
+            text-anchor="end"
+            fill="#94a3b8"
+            font-size="13"
+            font-family="system-ui, sans-serif">
+        2 repos
+      </text>
+
+    </g>
+    
+
+    <g transform="translate(405, 176.00)">
+
+      <rect width="14" height="14" rx="4"
+            fill="url(#grad-yellow)"/>
+
+      <text x="28" y="12"
+            fill="#f1f5f9"
+            font-size="14"
+            font-weight="600"
+            font-family="system-ui, sans-serif">
+        CSS
+      </text>
+
+      <text x="215" y="12"
+            text-anchor="end"
+            fill="#94a3b8"
+            font-size="13"
+            font-family="system-ui, sans-serif">
+        2 repos
+      </text>
+
+    </g>
+    
+
+    <g transform="translate(405, 216.00)">
+
+      <rect width="14" height="14" rx="4"
+            fill="url(#grad-indigo)"/>
+
+      <text x="28" y="12"
+            fill="#f1f5f9"
+            font-size="14"
+            font-weight="600"
+            font-family="system-ui, sans-serif">
+        C
+      </text>
+
+      <text x="215" y="12"
+            text-anchor="end"
+            fill="#94a3b8"
+            font-size="13"
+            font-family="system-ui, sans-serif">
+        1 repo
+      </text>
+
+    </g>
+    
+
+    <g transform="translate(405, 256.00)">
+
+      <rect width="14" height="14" rx="4"
+            fill="url(#grad-orange)"/>
+
+      <text x="28" y="12"
+            fill="#f1f5f9"
+            font-size="14"
+            font-weight="600"
+            font-family="system-ui, sans-serif">
+        Makefile
+      </text>
+
+      <text x="215" y="12"
+            text-anchor="end"
+            fill="#94a3b8"
+            font-size="13"
+            font-family="system-ui, sans-serif">
+        1 repo
+      </text>
+
+    </g>
+    
+
+    <g transform="translate(405, 296.00)">
+
+      <rect width="14" height="14" rx="4"
+            fill="url(#grad-purple)"/>
+
+      <text x="28" y="12"
+            fill="#f1f5f9"
+            font-size="14"
+            font-weight="600"
+            font-family="system-ui, sans-serif">
+        JavaScript
+      </text>
+
+      <text x="215" y="12"
+            text-anchor="end"
+            fill="#94a3b8"
+            font-size="13"
+            font-family="system-ui, sans-serif">
+        1 repo
+      </text>
+
+    </g>
+    
+
+<line x1="35" y1="355" x2="725" y2="355"
+      stroke="#1e293b" stroke-width="1.5"/>
+
+<text x="35" y="383"
+      fill="#64748b"
+      font-size="12"
+      font-weight="500"
+      font-family="system-ui, -apple-system, sans-serif">
+    ✨ A repository can contain multiple languages
+</text>
+
 </svg>
