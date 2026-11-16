@@ -247,7 +247,6 @@ for i, (language, count) in enumerate(
 
     start_angle = end_angle
 
-
 # --------------------------------------------------
 # CENTER HOLE
 # --------------------------------------------------
@@ -265,20 +264,19 @@ svg.append(f'''
       font-size="18"
       font-weight="700"
       font-family="system-ui, -apple-system, sans-serif">
-    {repos_with_languages}
+    {total}
 </text>
 
 <text x="{cx}" y="{cy + 15}"
       text-anchor="middle"
       fill="#64748b"
-      font-size="11"
+      font-size="9"
       font-weight="600"
       font-family="system-ui, -apple-system, sans-serif"
-      letter-spacing="0.5">
-    REPOS
+      letter-spacing="0.3">
+    LANG OCCURRENCES
 </text>
 ''')
-
 
 # --------------------------------------------------
 # LEGEND
