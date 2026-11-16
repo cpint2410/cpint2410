@@ -13,7 +13,7 @@ I'm passionate about building applications, exploring AI-driven solutions, and d
 
 ## 📊 My Developer Activity
 
-![GitHub Activity](assets/activity.svg?v=2)
+![GitHub Activity](https://raw.githubusercontent.com/cpint2410/cpint2410/main/assets/activity.svg)
 
 ---
 
