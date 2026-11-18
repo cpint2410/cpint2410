@@ -6,7 +6,7 @@ Computer Science and Artificial Intelligence student at Queen Mary University of
 
 I enjoy building practical software solutions, working with complex datasets and developing applications from initial design through to deployment.
 
-- 🎓 BSc Computer Science & Artificial Intelligence — Queen Mary University of London
+- 🎓 BSc Computer Science & Artificial Intelligence - Queen Mary University of London
 - 💻 Software development experience across Python, Java, C#, JavaScript and TypeScript
 - 🗄️ Experience designing relational databases and migrating large datasets
 - 🚀 Interested in backend engineering, cloud technologies and full-stack development
@@ -41,7 +41,7 @@ Independently developed and deployed a financial records management application 
 
 ## 🚀 Featured Projects
 
-### MailSync — Email Automation SaaS
+### MailSync - Email Automation SaaS
 **C# | .NET | ASP.NET Core | PostgreSQL | Docker**
 
 Developing a containerised productivity platform for email ingestion, processing and transformation.
