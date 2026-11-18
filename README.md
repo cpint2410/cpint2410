@@ -141,7 +141,7 @@ Database Design · Data Migration · Testing · Debugging
 - 💼 [LinkedIn](https://www.linkedin.com/in/chris-pinto-083242388)
 - 🌐 [Portfolio](https://chrispinto.tech/)
 - 🐙 [GitHub](https://github.com/cpint2410)
-- ✉️ chrispinto.work@gmail.com
+- ✉️ [Email](mailto:chrispinto.work@gmail.com)
 - 𝕏 [X / Twitter](https://x.com/2410_cpu)
 
 ---
