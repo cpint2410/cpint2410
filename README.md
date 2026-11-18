@@ -1,5 +1,4 @@
-
-# 👋 Hi, I'm Chris Pinto!
+# 👋 Hi, It's Chris!
 
 ### Computer Science & Artificial Intelligence Student | Software Developer
 
