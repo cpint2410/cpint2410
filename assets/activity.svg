@@ -222,7 +222,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-10-23: 0 public events</title>
+        <title>2026-10-24: 0 public events</title>
 
       </rect>
 
@@ -248,7 +248,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-10-24: 0 public events</title>
+        <title>2026-10-25: 0 public events</title>
 
       </rect>
 
@@ -274,7 +274,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-10-25: 0 public events</title>
+        <title>2026-10-26: 0 public events</title>
 
       </rect>
 
@@ -300,7 +300,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-10-26: 0 public events</title>
+        <title>2026-10-27: 0 public events</title>
 
       </rect>
 
@@ -326,7 +326,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-10-27: 0 public events</title>
+        <title>2026-10-28: 0 public events</title>
 
       </rect>
 
@@ -352,7 +352,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-10-28: 0 public events</title>
+        <title>2026-10-29: 0 public events</title>
 
       </rect>
 
@@ -378,7 +378,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-10-29: 0 public events</title>
+        <title>2026-10-30: 0 public events</title>
 
       </rect>
 
@@ -404,7 +404,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-10-30: 0 public events</title>
+        <title>2026-10-31: 0 public events</title>
 
       </rect>
 
@@ -430,7 +430,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-10-31: 0 public events</title>
+        <title>2026-11-01: 0 public events</title>
 
       </rect>
 
@@ -456,7 +456,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-11-01: 0 public events</title>
+        <title>2026-11-02: 0 public events</title>
 
       </rect>
 
@@ -482,7 +482,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-11-02: 0 public events</title>
+        <title>2026-11-03: 0 public events</title>
 
       </rect>
 
@@ -508,7 +508,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-11-03: 0 public events</title>
+        <title>2026-11-04: 0 public events</title>
 
       </rect>
 
@@ -534,7 +534,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-11-04: 0 public events</title>
+        <title>2026-11-05: 0 public events</title>
 
       </rect>
 
@@ -560,7 +560,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-11-05: 0 public events</title>
+        <title>2026-11-06: 0 public events</title>
 
       </rect>
 
@@ -569,32 +569,6 @@
 
     <g class="bar-group d-15"
        transform="translate(399, 70)">
-
-      <rect class="activity-bg-bar"
-            x="0"
-            y="0"
-            width="15"
-            height="102"
-            rx="4"
-            fill="#151b23"/>
-
-      <rect class="bar-anim"
-            x="0"
-            y="98.00"
-            width="15"
-            height="2.00"
-            rx="4"
-            fill="#30363d">
-
-        <title>2026-11-06: 0 public events</title>
-
-      </rect>
-
-    </g>
-    
-
-    <g class="bar-group d-16"
-       transform="translate(425, 70)">
 
       <rect class="activity-bg-bar"
             x="0"
@@ -619,8 +593,8 @@
     </g>
     
 
-    <g class="bar-group d-17"
-       transform="translate(451, 70)">
+    <g class="bar-group d-16"
+       transform="translate(425, 70)">
 
       <rect class="activity-bg-bar"
             x="0"
@@ -645,8 +619,8 @@
     </g>
     
 
-    <g class="bar-group d-18"
-       transform="translate(477, 70)">
+    <g class="bar-group d-17"
+       transform="translate(451, 70)">
 
       <rect class="activity-bg-bar"
             x="0"
@@ -671,8 +645,8 @@
     </g>
     
 
-    <g class="bar-group d-19"
-       transform="translate(503, 70)">
+    <g class="bar-group d-18"
+       transform="translate(477, 70)">
 
       <rect class="activity-bg-bar"
             x="0"
@@ -697,8 +671,8 @@
     </g>
     
 
-    <g class="bar-group d-20"
-       transform="translate(529, 70)">
+    <g class="bar-group d-19"
+       transform="translate(503, 70)">
 
       <rect class="activity-bg-bar"
             x="0"
@@ -717,6 +691,32 @@
             fill="url(#bar-grad)">
 
         <title>2026-11-11: 13 public events</title>
+
+      </rect>
+
+    </g>
+    
+
+    <g class="bar-group d-20"
+       transform="translate(529, 70)">
+
+      <rect class="activity-bg-bar"
+            x="0"
+            y="0"
+            width="15"
+            height="102"
+            rx="4"
+            fill="#151b23"/>
+
+      <rect class="bar-anim"
+            x="0"
+            y="98.00"
+            width="15"
+            height="2.00"
+            rx="4"
+            fill="#30363d">
+
+        <title>2026-11-12: 0 public events</title>
 
       </rect>
 
@@ -742,7 +742,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-11-12: 0 public events</title>
+        <title>2026-11-13: 0 public events</title>
 
       </rect>
 
@@ -751,32 +751,6 @@
 
     <g class="bar-group d-22"
        transform="translate(581, 70)">
-
-      <rect class="activity-bg-bar"
-            x="0"
-            y="0"
-            width="15"
-            height="102"
-            rx="4"
-            fill="#151b23"/>
-
-      <rect class="bar-anim"
-            x="0"
-            y="98.00"
-            width="15"
-            height="2.00"
-            rx="4"
-            fill="#30363d">
-
-        <title>2026-11-13: 0 public events</title>
-
-      </rect>
-
-    </g>
-    
-
-    <g class="bar-group d-23"
-       transform="translate(607, 70)">
 
       <rect class="activity-bg-bar"
             x="0"
@@ -801,8 +775,8 @@
     </g>
     
 
-    <g class="bar-group d-24"
-       transform="translate(633, 70)">
+    <g class="bar-group d-23"
+       transform="translate(607, 70)">
 
       <rect class="activity-bg-bar"
             x="0"
@@ -827,8 +801,8 @@
     </g>
     
 
-    <g class="bar-group d-25"
-       transform="translate(659, 70)">
+    <g class="bar-group d-24"
+       transform="translate(633, 70)">
 
       <rect class="activity-bg-bar"
             x="0"
@@ -853,8 +827,8 @@
     </g>
     
 
-    <g class="bar-group d-26"
-       transform="translate(685, 70)">
+    <g class="bar-group d-25"
+       transform="translate(659, 70)">
 
       <rect class="activity-bg-bar"
             x="0"
@@ -879,8 +853,8 @@
     </g>
     
 
-    <g class="bar-group d-27"
-       transform="translate(711, 70)">
+    <g class="bar-group d-26"
+       transform="translate(685, 70)">
 
       <rect class="activity-bg-bar"
             x="0"
@@ -899,6 +873,32 @@
             fill="url(#bar-grad)">
 
         <title>2026-11-18: 5 public events</title>
+
+      </rect>
+
+    </g>
+    
+
+    <g class="bar-group d-27"
+       transform="translate(711, 70)">
+
+      <rect class="activity-bg-bar"
+            x="0"
+            y="0"
+            width="15"
+            height="102"
+            rx="4"
+            fill="#151b23"/>
+
+      <rect class="bar-anim"
+            x="0"
+            y="98.00"
+            width="15"
+            height="2.00"
+            rx="4"
+            fill="#30363d">
+
+        <title>2026-11-19: 0 public events</title>
 
       </rect>
 
@@ -924,7 +924,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-11-19: 0 public events</title>
+        <title>2026-11-20: 0 public events</title>
 
       </rect>
 
@@ -950,7 +950,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-11-20: 0 public events</title>
+        <title>2026-11-21: 0 public events</title>
 
       </rect>
 
@@ -976,7 +976,7 @@
             rx="4"
             fill="#30363d">
 
-        <title>2026-11-21: 0 public events</title>
+        <title>2026-11-22: 0 public events</title>
 
       </rect>
 
