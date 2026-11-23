@@ -26,9 +26,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Generate activity chart
-        run: python .github/scripts/activity_chart.py
-
       - name: Commit updated charts
         run: |
           git config user.name "github-actions[bot]"
